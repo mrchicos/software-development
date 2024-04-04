@@ -1,4 +1,7 @@
 # Data Models and Query Languages
+
+ The data format application developers give the database, and mechanism to ask again.
+
 - Applications are built by layering one data model on top of another, each layer needs to represented by the next-lower layer.
 - Application developers model the world in term of objects, model structures and APIs.
 - Storage layer stores these data structures with data model like JSON, XML documents or tables in relational databases, or a graph model.
