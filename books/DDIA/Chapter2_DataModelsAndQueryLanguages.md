@@ -47,3 +47,6 @@ Client Server Communication Options: Rest vs. GraphQL vs gRPC
 - GraphQL is **a query language** for APIs. [GraphQL vs. Rest](https://www.youtube.com/watch?v=PTfZcN20fro)
 
 - [gRPC](https://www.youtube.com/watch?v=hVrwuMnCtok&t=212s) is a modern communication **framework**, uses HTTP2.0, and protocol buffer, for internal heterogeneous microservices. Usually choosen for convenience and performance. Born from Google. 
+
+
+NoSQL Database
