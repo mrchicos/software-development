@@ -111,3 +111,13 @@ JSON is more compact than XML, but binary offers little advantages as field name
  - The actor model is a programming model for concurrency in a single process. Each actor typically represents one client or entity, it may have some local state (which is not shared with any other actor), and it communicates with other actors by sending and receiving asynchro‐ nous messages.
  - In distributed actor frameworks, this programming model is used to scale an applica‐ tion across multiple nodes. The message is transparently encoded into a byte sequence, sent over the network, and decoded on the other side.
  - A distributed actor framework essentially integrates a message broker and the actor programming model into a single framework. 
+
+
+ ## Related Concepts
+Client Server Communication Options: Rest vs. GraphQL vs gRPC 
+
+- Rest is **an architecture**, easy to build, yet can created coupling between client and server, subject to both over fetching and under fetching data.
+
+- GraphQL is **a query language** for APIs. [GraphQL vs. Rest](https://www.youtube.com/watch?v=PTfZcN20fro)
+
+- [gRPC](https://www.youtube.com/watch?v=hVrwuMnCtok&t=212s) is a modern communication **framework**, uses HTTP2.0, and protocol buffer, for internal heterogeneous microservices. Usually choosen for convenience and performance. Born from Google. 
