@@ -54,7 +54,8 @@ These issues—node failures; unreliable networks; and trade-offs around replica
     - tied to specific DB storage format, may prevent zero-down time upgrade  
 - Logical (row-based) log replication
     - change data capture
-- Trigger based application
+- Trigger based application 
+    - typically more overhead
 
 ### Problems with Replication Log
 - Read scaling architecture with asynchronous replication and eventual consistency
