@@ -107,7 +107,6 @@ These issues—node failures; unreliable networks; and trade-offs around replica
     - circular
 - casual ordering of writes
 
-
 ### Leaderless Replication
 - In single-leader or multi-leader replication, leader determines the order in which writes should be processed. 
 - Leaderless replication is also called dynamno-style
