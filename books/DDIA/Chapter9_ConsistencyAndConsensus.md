@@ -176,9 +176,10 @@ ZooKeeper and etcd are designed to hold small amounts of data that can fit entir
 - Membership services
     - A membership service determines which nodes are currently active and live members of a cluster
     - when couple failure detection with consensus, nodes can come to an agreement about which nodes should be considered alive or not.
-    
+
 #### Future DIGs
 - Unique ID generator
 - Vector clock
 - SAGA
+- Revisit Uber Ride matching consistency guarantee
 

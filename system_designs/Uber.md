@@ -1,6 +1,6 @@
 ## Functional
 - rider shall see estimated fair based on orig and dest
-- rider can request ride
+- rider can request ride, and matched in real-time
 - driver can accept ride
 - driver location tracked
 
@@ -8,7 +8,7 @@
 - Low latency ride matching
 - strong consistency in ride matching
 - high availability & reliability
-- handle peak hour/event traffic
+- high throughput, handle peak hour/event traffic
 
 ## Core Entities
 - rider
@@ -27,6 +27,10 @@ Partial<Ride>
 }
 
 - post /rides/request
+Body {
+    "rideId": string
+}
+- post /drivers/location/update
 Body 
 {
     "lat": double,
@@ -56,9 +60,20 @@ Body:
 ## High Level
 - Ride estimate (CURD service pattern with a 3rd mapping service)
 - Ride matching
-- Driver accepts (Notification )
+- Driver accepts ( Notifications are sent via APN (Apple Push Notification) and FCM (Firebase Cloud Messaging) for iOS and Android devices, respectively )
 
 ## Deep Dive
-- Frequent driver updates
+- Frequent driver updates (batching + the geospatial database => Redis with in memory geohash + TTL)
+- manage system overload from driver location updates (dynamic location updates)
 - Prevent multiple rides requests to the same driver
+    - application level locks
+        - can cause race conditions
+        - could result in hanging locks due to failures
+        - coordinating locks across instances are error prones
+    - database locks
+        - cron jobs to clean up locks
+    - distributed locks with TTL
 - Peak hours no ride requests dropped
+    - queue
+- Further scale reduce latency & improve throughput
+    - geo-sharding & read replicas
