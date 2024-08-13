@@ -36,7 +36,8 @@ POST /webhook/event
     - aggregate stats from persisted webhook events
 - Security
     - authentication
-        - use secret_token (authO token, API keys) to identify webhook request
+        - from provider to client: use secret_token (authO token, API keys) to identify webhook request
+        - client requests authenticated via API key/auth token (auth0)
     - specified IP address
     - Encrypt in transit
         - payload encryption (symmetric or asymmetric)
