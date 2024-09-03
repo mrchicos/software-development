@@ -7,6 +7,13 @@ Data Dog: Mint App
 Tiktok Behavior:
     https://interviewsmile.com/resources/company/top-behavioral-interview-questions-for-your-tiktok-job-interview/
 Meta EM Project Retrospective
+    https://docs.google.com/document/d/1GCAGCIL6GqnyBLwtoyi8AeWVuKQp8XiidYL4-Pj3eqk/edit
 Google: 
     MapReduce
+    State machine
+    Stream processing on integer 64, unlimited numbers (2x8, 2x8) etc
+Uber:
+    Distributed Logging
+    Metrics Alert System
+    
 
