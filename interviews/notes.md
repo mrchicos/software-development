@@ -8,6 +8,7 @@ Tiktok Behavior:
     https://interviewsmile.com/resources/company/top-behavioral-interview-questions-for-your-tiktok-job-interview/
 Meta EM Project Retrospective
     https://docs.google.com/document/d/1GCAGCIL6GqnyBLwtoyi8AeWVuKQp8XiidYL4-Pj3eqk/edit
+    https://www.reddit.com/r/leetcode/comments/1eyxgwl/meta_e6_study_guide/
 Google: 
     MapReduce
     State machine
