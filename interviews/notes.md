@@ -1,4 +1,5 @@
 Stripe: https://github.com/saurabhgokhale/StripeInterview
+    Feature Flag Store
 Snowflake: 
     Design Youtube and write Cache layer 
     Design a Web Crawler and write BFS
@@ -9,6 +10,7 @@ Tiktok Behavior:
 Meta EM Project Retrospective
     https://docs.google.com/document/d/1GCAGCIL6GqnyBLwtoyi8AeWVuKQp8XiidYL4-Pj3eqk/edit
     https://www.reddit.com/r/leetcode/comments/1eyxgwl/meta_e6_study_guide/
+    https://www.youtube.com/watch?v=KhEvEWzMvcE&t=290s
 Google: 
     MapReduce
     State machine
@@ -16,5 +18,4 @@ Google:
 Uber:
     Distributed Logging
     Metrics Alert System
-    
 
